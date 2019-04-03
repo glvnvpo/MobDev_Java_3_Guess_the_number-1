@@ -3,46 +3,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/try_to_guess" />
+                android:layout_height="wrap_content" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <EditText
                 android:id="@+id/editText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"/>
+                android:inputType="number" />
         </TableRow>
 
-        <TableRow
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="@string/input_value" />
+
+
+        <Button
+            android:id="@+id/button_easy"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="wrap_content"
+            android:text="Easy"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="128dp"
+            app:backgroundTint="#87CEEB" />
+
+
+
+        <Button
+            android:id="@+id/button_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            tools:layout_editor_absoluteX="136dp"
+            tools:layout_editor_absoluteY="128dp"
+            app:backgroundTint="#6495ED" />
+
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
+                android:id="@+id/button_hard"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="onClick"
-                android:text="@string/input_value" />
-        </TableRow>
+                android:text="Hard"
+                tools:layout_editor_absoluteX="252dp"
+                tools:layout_editor_absoluteY="128dp"
+                app:backgroundTint="#4169E1" />
+
+        <Button
+            android:id="@+id/button_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exit"
+            tools:layout_editor_absoluteX="252dp"
+            tools:layout_editor_absoluteY="128dp"
+            app:backgroundTint="#FF6347" />
+
+
     </TableLayout>
+
+
+
 
 </android.support.constraint.ConstraintLayout>
