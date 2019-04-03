@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         bControl.setOnClickListener(this);
 
-        tvInfo.setText("Попробуйте угадать число ("+n1+"-"+n2+")" +random);
+        tvInfo.setText("Попробуйте угадать число ("+n1+"-"+n2+")");
 
 
         View.OnClickListener clickListener_easy = new View.OnClickListener() {
